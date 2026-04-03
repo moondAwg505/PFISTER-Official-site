@@ -1,0 +1,24 @@
+:root {
+  /* Шрифты */
+    
+  /* Цвета */
+  --main-site-color: #fff;
+  --second-site-color: #000;
+
+  /* Цвета текста */
+  --text-title-model-color: #fff;
+  --main-text-site-color: #000;
+
+  /* Цвет UI стрелок */
+  --arrow-color-default-state: #000;
+  --arrow-color-hover: #fff;
+
+  /* Размеры шрифтов */
+  --font-size-logo: 64px;
+  --font-size-button-header: 18px;
+  --font-size-footer-text: 20px;
+  --font-size-h1: 60px;
+  --font-size-h2: 39px;
+  --font-size-h3: 37px;
+  --font-size-h4: 29px;
+}
