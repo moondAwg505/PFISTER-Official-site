@@ -53,6 +53,3 @@ I adapted the in‑game brand to the standards of a premium yet accessible autom
 ## RU: Автор / EN: Author
 
 Костя Краснов (moondAwg) / Kostya Krasnov (moondAwg)
-
-
-Использую библиотеки Swiper, Clsx, Framer-motion
