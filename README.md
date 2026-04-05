@@ -2,8 +2,8 @@
 
 ## RU: Описание проекта EN: Project description
 RU: Представьте, если бы PFISTER существовал в реальности. Этот проект — попытка передать дух немецкого инжиниринга из Лос-Сантоса в настоящий мир.
-Я адаптировал игровую марку под стандарты премиального, но доступного автомобильного бренда. На сайте есть небольшая история и слоган компании, основной обширный выбор моделей, а также эксклюзивные авто для ценителей доступного чуда немецкой инженерии.
-EN: Imagine if PFISTER existed in real life. This project is an attempt to bring the spirit of German engineering from Los Santos into the real world. 
+Я адаптировал игровую марку под стандарты премиального, но доступного автомобильного бренда. На сайте есть небольшая история и слоган компании, основной обширный выбор моделей, а также эксклюзивные авто для ценителей доступного чуда немецкой инженерии. /
+EN: Imagine if PFISTER existed in real life. This project is an attempt to bring the spirit of German engineering from Los Santos into the real world.
 I adapted the in‑game brand to the standards of a premium yet accessible automotive brand. The website features a short company history and its slogan, a wide selection of core models, as well as exclusive cars for connoisseurs of this affordable marvel of German engineering.
 
 ## RU: Технологии / EN: Technologies 
