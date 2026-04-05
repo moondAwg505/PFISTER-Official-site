@@ -1,6 +1,8 @@
 :root {
   /* Шрифты */
-    
+  --logo-fonts: "SK Porsche", sans-serif;
+  --site-main-fonts: "Alata", sans-serif;
+
   /* Цвета */
   --main-site-color: #fff;
   --second-site-color: #000;

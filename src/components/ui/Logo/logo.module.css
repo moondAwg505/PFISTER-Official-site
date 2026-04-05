@@ -1,0 +1,11 @@
+.logo {
+    font-family: var(--logo-fonts, "SK Porsche", sans-serif);
+    color: #000;
+    font-size: var(--font-size-logo, 64px);
+    text-decoration: none;
+    letter-spacing: 15px;
+    display: inline-block;
+    transform: scaleY(0.8);
+    transform-origin: center;
+    text-transform: uppercase;
+}

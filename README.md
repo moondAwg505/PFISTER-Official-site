@@ -20,6 +20,11 @@ I adapted the in‑game brand to the standards of a premium yet accessible autom
 * Adobe Photoshop (Корректировка изображений/Image correction)
 * Storybook
 
+## RU: Библиотеки / EN: Libraries
+* Swiper
+* Clsx 
+* Framer-motion
+
 ## RU: Функциональность / EN: Functionality
 * RU: **Навигация**: Простое меню навигации в header по разделам "Company", "Model", "Support". / EN: **Navigation**: A simple navigation menu in the header for the "Company", "Model", "Support" sections
 * RU: **Раздел "Model"**: Модельный ряд бренда. / EN: **The "Models" section**: The brand's model range
@@ -48,3 +53,6 @@ I adapted the in‑game brand to the standards of a premium yet accessible autom
 ## RU: Автор / EN: Author
 
 Костя Краснов (moondAwg) / Kostya Krasnov (moondAwg)
+
+
+Использую библиотеки Swiper, Clsx, Framer-motion
