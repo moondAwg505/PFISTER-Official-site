@@ -1,0 +1,30 @@
+.header {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  min-width: 1440px;
+  height: 80px;
+  background-color: var(--main-text-site-color, #000);
+  padding-inline-start: 15px;
+}
+
+.button {
+  position: relative;
+  border: none;
+  background: none;
+  color: var(--button-color-text, #fff);
+  font-family: var(--site-main-fonts, "Alata", sans-serif);
+  font-size: var(--font-size-button-header);
+  cursor: pointer;
+  /* Анимацяи подчёркивания через text-decoration*/
+  text-decoration: underline;
+  text-decoration-skip-ink: auto;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 2px;
+  text-decoration-color: transparent;
+  transition: text-decoration-color 0.2s ease;
+}
+
+.button:hover {
+  text-decoration-color: currentColor;
+}

@@ -1,7 +1,7 @@
 :root {
   /* Шрифты */
-  --logo-fonts: "SK Porsche", sans-serif;
-  --site-main-fonts: "Alata", sans-serif;
+  --logo-fonts: "SK_Porsche";
+  --site-main-fonts: "Alata";
 
   /* Цвета */
   --main-site-color: #fff;
@@ -23,4 +23,7 @@
   --font-size-h2: 39px;
   --font-size-h3: 37px;
   --font-size-h4: 29px;
+
+  /* Цвет кнопок */
+  --button-color-text: #fff;
 }

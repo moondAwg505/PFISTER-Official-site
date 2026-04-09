@@ -1,16 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
 
 .alata {
-  font-family: "Alata", sans-serif;
+  font-family: "Alata";
   font-style: normal;
   font-weight: 400;
 }
 
 @font-face {
-  font-family: "SK Porsche", sans-serif;
+  font-family: "SK_Porsche";
   src:
-    url("./sk-porsche.woff") format("woff"),
-    url("./sk-porsche.woff2") format("woff2");
+    url("../fonts/sk-porsche.woff") format("woff"),
+    url("../fonts/sk-porsche.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
