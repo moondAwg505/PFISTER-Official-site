@@ -1,11 +1,18 @@
 .header {
   display: flex;
   align-items: center;
-  gap: 40px;
+  gap: 65px;
   min-width: 1440px;
   height: 80px;
   background-color: var(--main-text-site-color, #000);
   padding-inline-start: 15px;
+}
+
+.header_logo {
+  font-family: var(--logo-fonts, SK_Porsche, sans-serif);
+  color: #fff;
+  font-size: 32px;
+  text-decoration: none;
 }
 
 .button {

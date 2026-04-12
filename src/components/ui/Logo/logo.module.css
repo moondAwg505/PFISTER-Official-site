@@ -1,10 +1,8 @@
-.logo {
-    font-family: var(--logo-fonts, SK_Porsche, sans-serif);
-    color: #fff;
-    font-size: var(--font-size-logo, 64px);
-    text-decoration: none;
-    display: inline-block;
-    transform: scaleY(0.5);
-    transform-origin: center;
-    text-transform: uppercase;
+.logo_default {
+  font-family: var(--logo-fonts, SK_Porsche, sans-serif);
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  transform-origin: center;
+  text-transform: uppercase;
 }

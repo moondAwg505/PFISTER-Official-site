@@ -13,7 +13,7 @@ export const Header: React.FC = () => {
 
   return (
     <header className={styles.header}>
-      <Logo />
+      <Logo className={styles.header_logo} />
       <button
         className={styles.button}
         onClick={() => scrollToElement("company")}
