@@ -1,0 +1,4 @@
+.title_default {
+    font-family: var(--site-main-fonts, Alata), sans-serif;
+    font-size: var(--font-size-h2, 39px);
+}
