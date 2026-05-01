@@ -1,0 +1,21 @@
+.arrowBtn {
+  display: block;
+  background-image: url("../../../assets/Image//Arrow.png");
+  width: 75px;
+  height: 75px;
+  border: none;
+  background-color: transparent;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition: background-image 0.2s ease-in-out;
+}
+
+.arrowBtn:hover {
+  background-image: url("../../../assets//Image//Arrow_Hover.png");
+}
+
+.left {
+  transform: rotate(180deg);
+}
