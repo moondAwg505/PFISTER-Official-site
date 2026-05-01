@@ -1,0 +1,61 @@
+.modelSection {
+  background-color: var(--second-site-color, #000);
+  min-width: 1440px;
+  margin-block-start: 27px;
+}
+
+.titleModelSection {
+  text-align: center;
+  color: var(--text-title-model-color, #fff);
+  font-weight: normal;
+  padding-block-start: 20px;
+}
+
+.modelGrid {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: 1fr 1fr;
+  margin-inline-start: 45px;
+  margin-inline-end: 45px;
+  margin-block-start: 40px;
+  margin-block-end: 110px;
+}
+
+.modelsItem {
+  position: relative;
+  width: 615px;
+  height: 396px;
+  overflow: hidden;
+  border-radius: 2%;
+}
+
+.modelsItem:nth-child(1) {
+  margin-bottom: 70px;
+}
+
+/* Третья карточка (Bottom-Left) */
+.modelsItem:nth-child(3) {
+  margin-right: 120px;
+}
+
+.itemImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.itemTitle {
+  position: absolute;
+  font-family: var(--site-main-fonts, Alata);
+  font-size: var(--font-size-h3, 37px);
+  color: var(--text-title-model-color, #fff);
+  font-weight: normal;
+  bottom: 20px;
+}
+
+.modelsItem:nth-child(1) .itemTitle,
+.modelsItem:nth-child(2) .itemTitle {
+  right: 145px;
+}
