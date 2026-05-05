@@ -1,6 +1,5 @@
 // Создание стрелдолчек для слайдера
 import style from "./arrow.module.css";
-import React from "react";
 
 // Что будет принимать компонет
 interface IArrowProps {

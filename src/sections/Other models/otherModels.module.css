@@ -1,0 +1,8 @@
+.sectionSlider {
+    display: block;
+}
+
+.sectionSliderTitle {
+    color: var(--second-site-color, #000);
+    text-align: center;
+}

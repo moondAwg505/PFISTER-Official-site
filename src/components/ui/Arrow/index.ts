@@ -1,1 +1,1 @@
-import { Arrow } from "./arrow";
+export { Arrow } from "./arrow";

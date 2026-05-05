@@ -34,3 +34,5 @@ export const ModelGrid: React.FC<IModelId> = ({id}) => {
     </section>
   );
 };
+
+export default ModelGrid

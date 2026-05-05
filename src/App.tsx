@@ -3,6 +3,7 @@ import { Header } from "./sections/Header";
 import { Hero } from "./sections/Hero";
 import { ModelGrid } from "./sections/ModelsGrid";
 import React from "react";
+import { OtherModels } from "./sections/Other models";
 
 interface IIdSectionProps {
   id?: string;
@@ -15,8 +16,8 @@ export default function App() {
       <Hero />
       <About id="company" />
       <ModelGrid id="model" />
-      {/* <Other_models id="other_models" />
-      <Footer id="support" />  */}
+      <OtherModels id="Other models" />
+      {/* <Footer id="support" />  */}
     </div>
   );
 }
