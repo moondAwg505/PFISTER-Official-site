@@ -1,0 +1,39 @@
+.footer_section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--second-site-color, #000);
+  min-width: 1440px;
+  min-height: 76px;
+}
+
+.email {
+  color: #fff;
+  font-family: var(--site-main-fonts, Alata);
+  font-size: var(--font-size-footer-text, 20px);
+  margin-left: 20px;
+  cursor: pointer;
+  /* Анимацяи подчёркивания через text-decoration*/
+  text-decoration: underline;
+  text-decoration-skip-ink: auto;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 2px;
+  text-decoration-color: transparent;
+  transition: text-decoration-color 0.2s ease;
+}
+
+.email:hover {
+  text-decoration-color: currentColor;
+}
+
+.footer_logo {
+  font-family: var(--logo-fonts, SK_Porsche);
+  font-size: 32px;
+}
+
+.copirate_company {
+  font-family: var(--site-main-fonts, Alata);
+  font-size: var(--font-size-footer-text, 20px);
+  color: #fff;
+  margin-right: 30px;
+}
