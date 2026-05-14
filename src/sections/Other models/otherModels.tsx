@@ -12,6 +12,7 @@ import style from "./otherModels.module.css";
 import xtremeImg from "../../assets/Image/Pfister_X-treme.jpg";
 import astraleImg from "../../assets/Image/Pfister_Astrale.jpg";
 import red811Img from "../../assets/Image/Pfister_811.jpg";
+import { Logo } from "../../components/ui/Logo";
 
 interface IOtherModelId {
   id?: string;
@@ -19,9 +20,9 @@ interface IOtherModelId {
 
 // Массив авто
 const cars = [
-  { id: 1, name: "PFISTER X-treme", img: xtremeImg },
-  { id: 2, name: "PFISTER Astrale", img: astraleImg },
-  { id: 3, name: "PFISTER 811", img: red811Img },
+  { id: 1, name: "X-treme", img: xtremeImg },
+  { id: 2, name: "Astrale", img: astraleImg },
+  { id: 3, name: "811", img: red811Img },
 ];
 
 export const OtherModels: React.FC<IOtherModelId> = ({ id }) => {
@@ -29,38 +30,43 @@ export const OtherModels: React.FC<IOtherModelId> = ({ id }) => {
   return (
     <section id={id} className={style.sectionSlider}>
       <Title className={style.sectionSliderTitle}>Other models</Title>
-      {/* Кастомные стрелки для слайдера */}
-      <div className={style.navigation}>
-        <Arrow
-          direction="left"
-          onClick={() => swiperRef.current?.slidePrev()}
-        />
-        <Arrow
-          direction="right"
-          onClick={() => swiperRef.current?.slideNext()}
-        />
+      <div className={style.sliderWrapper}>
+        {/* Кастомные стрелки для слайдера */}
+        <div className={style.navigation}>
+          <Arrow
+            direction="left"
+            onClick={() => swiperRef.current?.slidePrev()}
+          />
+          <Arrow
+            direction="right"
+            onClick={() => swiperRef.current?.slideNext()}
+          />
+        </div>
+        {/* Настройка слайдера */}
+        <Swiper
+          modules={[Navigation]}
+          onBeforeInit={(swiper) => {
+            swiperRef.current = swiper;
+          }}
+          spaceBetween={0}
+          slidesPerView={1}
+          loop={true}
+          className={style.slider}
+        >
+          {/* Слайдер */}
+          {cars.map((car) => (
+            <SwiperSlide key={car.id}>
+              <div className={style.sliderItem}>
+                <img src={car.img} alt={car.name} className={style.sliderImg} />
+                <div className={style.textOverlay}>
+                  <Logo className={style.slider_item_logo} />
+                  <h3 className={style.sliderTitle}>{car.name}</h3>
+                </div>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
-      {/* Настройка слайдера */}
-      <Swiper
-        modules={[Navigation]}
-        onBeforeInit={(swiper) => {
-          swiperRef.current = swiper;
-        }}
-        spaceBetween={0}
-        slidesPerView={1}
-        loop={true}
-        className={style.slider}
-      >
-        {/* Слайдер */}
-        {cars.map((car) => (
-          <SwiperSlide key={car.id}>
-            <div className={style.sliderItem}>
-              <img src={car.img} alt={car.name} className={style.sliderImg} />
-              <h3 className={style.sliderTitle}>{car.name}</h3>
-            </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
     </section>
   );
 };
