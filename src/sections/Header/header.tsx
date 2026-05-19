@@ -22,9 +22,9 @@ export const Header: React.FC = () => {
       </button>
       <button
         className={styles.button}
-        onClick={() => scrollToElement("model")}
+        onClick={() => scrollToElement("models")}
       >
-        Model
+        Models
       </button>
       <button
         className={styles.button}

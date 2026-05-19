@@ -1,6 +1,6 @@
 .modelSection {
   background-color: var(--second-site-color, #000);
-  min-width: 1440px;
+  width: 100%;
   margin-block-start: 27px;
 }
 
@@ -13,29 +13,46 @@
 
 .modelGrid {
   display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: 1fr 1fr;
-  margin-inline-start: 45px;
-  margin-inline-end: 45px;
-  margin-block-start: 40px;
-  padding-block-end: 37px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 70px 120px;
+  margin: 40px auto 0 auto;
+  padding-inline: 45px;
+  padding-block-end: 105px;
+  box-sizing: border-box;
 }
 
 .modelsItem {
   position: relative;
-  width: 615px;
-  height: 396px;
+  width: 100%;
+  aspect-ratio: 615 / 396;
+  z-index: 1;
+}
+
+.itemInner {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  border-radius: 12px;
   overflow: hidden;
-  border-radius: 2%;
+  transition: width 0.4s ease, box-shadow 0.4s;
 }
 
-.modelsItem:nth-child(1) {
-  margin-bottom: 70px;
+.modelsItem:nth-child(odd) .itemInner {
+  left: 0;
 }
 
-/* Третья карточка (Bottom-Left) */
-.modelsItem:nth-child(3) {
-  margin-right: 120px;
+.modelsItem:nth-child(even) .itemInner {
+  right: 0;
+}
+
+.modelsItem:hover {
+  z-index: 10; /* Поднимаем всю конструкцию поверх соседних машин */
+}
+
+.modelsItem:hover .itemInner {
+  width: calc(100% + 60px); 
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5); /* Добавляем тень для объема */
 }
 
 .itemImg {
@@ -52,10 +69,25 @@
   font-size: var(--font-size-h3, 37px);
   color: var(--text-title-model-color, #fff);
   font-weight: normal;
-  bottom: 20px;
+  bottom: 15px;
+  margin: 0;
+
+  text-decoration: underline transparent;
+  text-underline-offset: 8px;
+  text-decoration-thickness: 2px;
+  transition: text-decoration-color 0.3s ease;
+}
+
+.modelsItem:hover .itemTitle {
+  text-decoration-color: #ffffff;
 }
 
 .modelsItem:nth-child(1) .itemTitle,
 .modelsItem:nth-child(2) .itemTitle {
-  right: 145px;
+  right: 18px;
+}
+
+.modelsItem:nth-child(3) .itemTitle,
+.modelsItem:nth-child(4) .itemTitle {
+  left: 15px;
 }

@@ -22,12 +22,14 @@ export const ModelGrid: React.FC<IModelId> = ({id}) => {
 
   return (
     <section id={id} className={styles.modelSection}>
-      <Title className={styles.titleModelSection}>Model</Title>
+      <Title className={styles.titleModelSection}>Models</Title>
       <article className={styles.modelGrid}>
           {Model.map((car) => (
             <div key={car.name} className={styles.modelsItem}>
+              <div className={styles.itemInner}>
               <img className={styles.itemImg} src={car.img} alt={car.name} />
               <h3 className={styles.itemTitle}>{car.name}</h3>
+              </div>
             </div>
           ))}
       </article>

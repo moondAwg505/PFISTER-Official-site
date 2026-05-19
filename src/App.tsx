@@ -15,7 +15,7 @@ export default function App() {
       <Header />
       <Hero />
       <About id="company" />
-      <ModelGrid id="model" />
+      <ModelGrid id="models" />
       <OtherModels id="other_models" />
       <Footer id="support" />
     </div>
