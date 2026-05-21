@@ -1,70 +1,68 @@
 .sectionSlider {
-    display: block;
+  display: block;
 }
 
 .sectionSliderTitle {
-    color: var(--second-site-color, #000);
-    text-align: center;
-    margin-block-start: 20px;
-    margin-bottom: 20px; /* Отступ до самой картинки */
+  color: var(--second-site-color, #000);
+  text-align: center;
+  margin-block-start: 20px;
+  margin-bottom: 20px;
 }
 
 /* КОНТЕЙНЕР ДЛЯ ПОЗИЦИОНИРОВАНИЯ СТРЕЛОК */
 .sliderWrapper {
-    position: relative; /* Чтобы стрелки привязались к краям этой коробки */
+  position: relative;
 }
 
 /* СТРЕЛКИ НАВИГАЦИИ */
 .navigation {
-    position: absolute;
-    top: 50%;
-    left: 20px; /* Отступ левой стрелки от края */
-    right: 20px; /* Отступ правой стрелки от края */
-    transform: translateY(-50%); /* Идеальное центрирование по вертикали */
-    display: flex;
-    justify-content: space-between;
-    
-    z-index: 10; /* Кладем поверх картинки */
-    
-    /* ВАЖНО: пропускаем клики сквозь контейнер, иначе он перекроет Swiper и ты не сможешь листать мышкой/пальцем */
-    pointer-events: none; 
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  right: 20px;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+
+  z-index: 10;
+
+  pointer-events: none;
 }
 
 .navigation > * {
-    /* Разрешаем кликать по самим стрелкам */
-    pointer-events: auto; 
+  pointer-events: auto;
 }
 
-/* САМ СЛАЙД */
+/* СЛАЙД */
 .sliderItem {
-    position: relative; /* Чтобы текст привязался к углам картинки */
+  position: relative;
 }
 
 .sliderImg {
-    width: 100%;
-    display: block; /* Убирает микро-отступ снизу у картинок */
+  width: 100%;
+  display: block;
 }
 
-/* ГРУППА ЛОГОТИП + НАЗВАНИЕ */
+/* ГРУППА ЛОГОТИП И НАЗВАНИЕ */
 .textOverlay {
-    position: absolute;
-    bottom: 30px;
-    left: 15px;
-    z-index: 5;
-    display: flex;
-    align-items: baseline;
-    gap: 10px;
+  position: absolute;
+  bottom: 30px;
+  left: 15px;
+  z-index: 5;
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
 }
 
 .slider_item_logo {
-    color: #ffffff; /* На макете логотип белый */
-    font-size: 64px;
+  color: #ffffff;
+  font-size: 64px;
 }
 
 .sliderTitle {
-    margin: 0; /* Убираем стандартные отступы h3, чтобы флекс работал идеально */
-    color: #ffffff;
-    font-family: var(--site-main-fonts, Alata);
-    font-size: var(--font-size-h1, 39px);
-    font-weight: normal; /* Судя по скрину, текст без жирности */
+  margin: 0;
+  color: #ffffff;
+  font-family: var(--site-main-fonts, Alata);
+  font-size: var(--font-size-h1, 39px);
+  font-weight: normal;
 }

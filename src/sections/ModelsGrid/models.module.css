@@ -35,24 +35,29 @@
   width: 100%;
   border-radius: 12px;
   overflow: hidden;
-  transition: width 0.4s ease, box-shadow 0.4s;
+  transition:
+    width 0.4s ease,
+    box-shadow 0.4s;
 }
 
+/* Анимация увеличения карточки в ширину в определённую сторону при наведении */
+/* Обращение к нечётным элементам */
 .modelsItem:nth-child(odd) .itemInner {
   left: 0;
 }
 
+/* Обращение к чётным элементам */
 .modelsItem:nth-child(even) .itemInner {
   right: 0;
 }
 
 .modelsItem:hover {
-  z-index: 10; /* Поднимаем всю конструкцию поверх соседних машин */
+  z-index: 10;
 }
 
 .modelsItem:hover .itemInner {
-  width: calc(100% + 60px); 
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5); /* Добавляем тень для объема */
+  width: calc(100% + 60px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
 }
 
 .itemImg {
@@ -72,10 +77,13 @@
   bottom: 15px;
   margin: 0;
 
-  text-decoration: underline transparent;
-  text-underline-offset: 8px;
-  text-decoration-thickness: 2px;
-  transition: text-decoration-color 0.3s ease;
+  /* Анимацяи подчёркивания через text-decoration*/
+  text-decoration: underline;
+  text-decoration-skip-ink: auto;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 3px;
+  text-decoration-color: transparent;
+  transition: text-decoration-color 0.2s ease;
 }
 
 .modelsItem:hover .itemTitle {

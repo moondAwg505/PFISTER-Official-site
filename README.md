@@ -1,4 +1,4 @@
-# PFISTER Official site(Work in progress)
+# PFISTER Official site
 
 ## RU: Описание проекта EN: Project description
 RU: Представьте, если бы PFISTER существовал в реальности. Этот проект — попытка передать дух немецкого инжиниринга из Лос-Сантоса в настоящий мир.
