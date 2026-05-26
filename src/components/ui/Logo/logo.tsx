@@ -7,13 +7,12 @@ interface ILogoProps {
 
 export const Logo: React.FC<ILogoProps> = ({ className }) => {
   return (
-    <a
-      href="#"
+    <p
       className={`${styles.logo_default} ${className || ""}`}
       aria-label="Pfister Home"
     >
       PFISTER
-    </a>
+    </p>
   );
 };
 

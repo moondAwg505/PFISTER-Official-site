@@ -4,6 +4,8 @@ import { Hero } from "./sections/Hero";
 import { ModelGrid } from "./sections/ModelsGrid";
 import { OtherModels } from "./sections/Other models";
 import { Footer } from "./sections/Footer/footer";
+import { ErrorPage } from "./Pages/Error page";
+import { Route, Routes } from "react-router-dom";
 
 interface IIdSectionProps {
   id?: string;
@@ -11,13 +13,21 @@ interface IIdSectionProps {
 
 export default function App() {
   return (
-    <div>
-      <Header />
-      <Hero />
-      <About id="company" />
-      <ModelGrid id="models" />
-      <OtherModels id="other_models" />
-      <Footer id="support" />
-    </div>
+    <Routes>
+      <Route
+        path="/"
+        element={
+          <>
+            <Header />
+            <Hero />
+            <About id="company" />
+            <ModelGrid id="models" />
+            <OtherModels id="other_models" />
+            <Footer id="support" />
+          </>
+        }
+      />
+      <Route path="*" element={<ErrorPage />} />
+    </Routes>
   );
 }

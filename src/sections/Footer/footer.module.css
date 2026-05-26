@@ -37,3 +37,9 @@
   color: #fff;
   margin-right: 30px;
 }
+
+.logo_link {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}

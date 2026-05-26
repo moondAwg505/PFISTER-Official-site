@@ -1,0 +1,24 @@
+.errorItemSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 179px;
+  /* TO DO: Придумать как обойтись без нижнего margin */
+  margin-bottom: 232px;
+}
+
+.errorTitle {
+  font-size: var(--font-size-h1, 60px);
+  margin-bottom: 60px;
+}
+
+.errorPfister {
+  max-height: 196px;
+  max-width: 650px;
+}
+
+.errorText {
+  font-family: var(--site-main-fonts, Alata);
+  font-size: 50px;
+  margin-top: 50px;
+}

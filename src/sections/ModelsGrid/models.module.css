@@ -26,6 +26,7 @@
   width: 100%;
   aspect-ratio: 615 / 396;
   z-index: 1;
+    cursor: pointer;
 }
 
 .itemInner {

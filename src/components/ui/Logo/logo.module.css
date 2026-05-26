@@ -5,4 +5,5 @@
   display: inline-block;
   transform-origin: center;
   text-transform: uppercase;
+  cursor: default;
 }

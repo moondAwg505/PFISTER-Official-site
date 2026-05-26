@@ -10,8 +10,8 @@ I adapted the in‑game brand to the standards of a premium yet accessible autom
 * React
 * TypeScript
 * Vite
-* CSS modules
-* HTML
+* CSS3
+* HTML5
 
 ## RU: Инструменты / EN: Tools
 * Figma (Макет/Layout)
