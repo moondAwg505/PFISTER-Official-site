@@ -50,6 +50,9 @@ I adapted the in‑game brand to the standards of a premium yet accessible autom
     GitHub: https://github.com/moondAwg505
     Telegram: @moondAwg555
 
+## RU: Демо сайта / Demo site
+https://moondawg505.github.io/PFISTER-Official-site/
+
 ## RU: Автор / EN: Author
 
 Костя Краснов (moondAwg) / Kostya Krasnov (moondAwg)
