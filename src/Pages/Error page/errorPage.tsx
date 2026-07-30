@@ -1,4 +1,3 @@
-import React from "react";
 import Footer from "../../sections/Footer/footer";
 import { Title } from "../../components/ui/Title";
 import style from "./errorPage.module.css";

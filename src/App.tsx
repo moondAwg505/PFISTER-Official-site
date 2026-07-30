@@ -7,9 +7,9 @@ import { Footer } from "./sections/Footer/footer";
 import { ErrorPage } from "./Pages/Error page";
 import { Route, Routes } from "react-router-dom";
 
-interface IIdSectionProps {
-  id?: string;
-}
+// interface IIdSectionProps {
+//   id?: string;
+// }
 
 export default function App() {
   return (
