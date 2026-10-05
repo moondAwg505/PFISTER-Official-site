@@ -1,10 +1,14 @@
 .footer_section {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  position: relative;
   background-color: var(--second-site-color, #000);
-  min-width: 1440px;
+  width: 100%;
   min-height: 76px;
+  margin-top: auto;
+  flex-shrink: 0;
 }
 
 .email {
